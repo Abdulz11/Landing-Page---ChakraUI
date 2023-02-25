@@ -16,22 +16,22 @@ export function Header() {
   const [letterState, setLetterState] = useState(" ");
   console.log(letterState);
   useEffect(() => {
-    // let num = -1;
-    // let id = setInterval(function () {
-    //   num += 1;
-    //   if (num >= LogoArr.length) {
-    //     setLetterState("");
-    //     num = -1;
-    //     return;
-    //   }
-    //   setLetterState((prev) => {
-    //     return prev + LogoArr[num];
-    //   });
-    //   console.log(letterState);
-    // }, 300);
-    // return () => {
-    //   clearTimeout(id);
-    // };
+    let num = -1;
+    let id = setInterval(function () {
+      num += 1;
+      if (num >= LogoArr.length) {
+        setLetterState("");
+        num = -1;
+        return;
+      }
+       setLetterState((prev) => {
+         return prev + LogoArr[num];
+       });
+       console.log(letterState);
+     }, 300);
+     return () => {
+       clearTimeout(id);
+     };
   }, []);
 
   return (

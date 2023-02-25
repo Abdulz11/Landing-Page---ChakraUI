@@ -1,4 +1,4 @@
-# landing page using ChakraUi Library
+# landing page using ChakraUI Library
 ___
  A landing page for a fictional website using Chakra UI as the base library
  
